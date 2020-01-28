@@ -1,0 +1,11 @@
+{
+  "name": "pluralsight_audition",
+  "version": "1.0.0",
+  "description": "Project using reduce to determine max and min values. Pluralsight audition project.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Steven Hancock",
+  "license": "ISC"
+}
