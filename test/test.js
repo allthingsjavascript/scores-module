@@ -43,12 +43,17 @@ describe('Using reduce to build a module of three functions that will return dat
     });
   });
 
-  describe('computeNonZeroAverage returns average of non-zero scores', () => {
-
+  describe('computeNonZeroAverage returns average from the array', () => {
+    it('should return the average for non-zero scores', () => {
+      expect(app.computeNonZeroAverage([0, 90, 40, 100, 20, 0, 10, 100])).to.equal(60);
+      expect(app.computeNonZeroAverage([-10, -90, -40, -20, 0, -100])).to.equal(-52);
+      expect(app.computeNonZeroAverage([30, 90, 40, 100, 200, 50, 100, 150])).to.equal(95);
+      expect(app.computeNonZeroAverage([-30, -90, 40, 100, 200, 50, 100, 140, 0])).to.equal(63.75);
+    })
   });
 
-  describe('getMinMaxScore retrieves min and max score', () => {
-    it('Should return the minimum and maximum number.', () => {
+  describe('getMinMaxScore retrieves min and max score from the array', () => {
+    it('Should return the minimum and maximum score in an array', () => {
       expect(app.getMinMaxScore([0, 90, 40, 100, 20, 0, 10, 100])).to.eql([0, 100]);
       expect(app.getMinMaxScore([-10, -90, -40, -20, 0, -100])).to.eql([-100, 0]);
       expect(app.getMinMaxScore([30, 90, 40, 100, 200, 50, 100, 150])).to.eql([30, 200]);
