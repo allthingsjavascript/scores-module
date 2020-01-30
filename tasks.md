@@ -38,7 +38,7 @@ Export the functions from the module using the same three names.
 
 Code the `computeTotal` function to return the sum of all the scores from the passed in array.
 
-Use the reduce method of arrays to accomplish this.
+Use the reduce method of arrays to accomplish this. Don't forget to return the results from the function.
 
 ### Task 3: Code the computeNonZeroAverage Function
 
@@ -58,3 +58,4 @@ Here are some suggestions:
 * Each iteration of the reduce method needs to return an array with the current min and max values.
 * Each iteration of reduce should test the current min and max values with the next available score using `Math.min` and `Math.max`.
 * The initial value set for the accumulator should be an array that consists of a minimum and maximum score that will be replaced. For example as miniumum of 100 and a maximum of 0.
+* Return the results of the reduce method from the getMinMaxScore function.

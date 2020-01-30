@@ -1,3 +1,11 @@
+//Functions
+const computeTotal = function(scores) {
+  return scores.reduce((sum, score) => sum + score, 0);
+};
+
+const computeNonZeroAverage = function(scores) {
+  return computeTotal(scores) / scores.reduce((cnt, score) => (score !== 0) ? cnt + 1 : cnt, 0);
+};
 
 const getMinMaxScore = function(scores) {
   if (Array.isArray(scores)) {
@@ -7,7 +15,9 @@ const getMinMaxScore = function(scores) {
     //throw new Error('not an array')
   }
 };
-
+//Export
 module.exports = {
+  computeTotal: computeTotal,
+  computeNonZeroAverage: computeNonZeroAverage,
   getMinMaxScore: getMinMaxScore
 };

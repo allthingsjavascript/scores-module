@@ -22,7 +22,7 @@ describe('Using reduce to build a module of three functions that will return dat
         computeNonZeroAverageStr = '';
     if (typeof app.getMinMaxScore === 'function') getMinMaxScoreStr = app.getMinMaxScore.toString();
     if (typeof app.computeNonZeroAverage === 'function') computeNonZeroAverageStr = app.computeNonZeroAverage.toString();
-    if (typeof app.computeTotal === 'function') app.computeTotal.toString();
+    if (typeof app.computeTotal === 'function') computeTotalStr = app.computeTotal.toString();
 
     it('the computeTotal function uses reduce to return a sum', () => {
       expect(computeTotalStr).to.include('reduce');
