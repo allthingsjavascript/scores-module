@@ -1,14 +1,14 @@
 {
-  "name": "pluralsight_audition",
+  "name": "scores_module",
   "version": "1.0.0",
-  "description": "Project using reduce to determine max and min values. Pluralsight audition project.",
-  "main": "app.js",
+  "description": "Using the Array reduce Method to Create a Module of Functions",
+  "main": "manipulate-score-data.js",
   "scripts": {
     "test": "mocha"
   },
   "author": "Steven Hancock",
-  "license": "ISC",
-  "dependencies": {
+  "license": "MIT",
+  "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^7.0.1"
   }

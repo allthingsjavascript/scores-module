@@ -8,7 +8,7 @@ Each function will progressively require a more difficult application of the red
 
 ## Project Setup
 
-Once you have forked and downloaded the project, run the following command in the terminal at the root of the project folder to set up the project.
+Once you have forked and downloaded the project, run the following command in the terminal at the root of the project (`scores-module`) folder to set up the project.
 
 ```
 npm install
